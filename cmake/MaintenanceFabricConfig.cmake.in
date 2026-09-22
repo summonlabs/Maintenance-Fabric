@@ -1,0 +1,12 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET MaintenanceFabric::mf)
+  include("${CMAKE_CURRENT_LIST_DIR}/MaintenanceFabricTargets.cmake")
+endif()
+
+set(MaintenanceFabric_VERSION "@PROJECT_VERSION@")
+set(MaintenanceFabric_SOVERSION "@PROJECT_VERSION_MAJOR@")
+
+check_required_components(MaintenanceFabric)

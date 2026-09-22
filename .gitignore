@@ -1,0 +1,34 @@
+# Build trees
+/build/
+/build-*/
+/out/
+/install/
+/prefix/
+cmake-build-*/
+
+# CMake artefacts
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+CTestTestfile.cmake
+Testing/
+_deps/
+compile_commands.json
+
+# Editor / OS
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Runtime debris
+*.log
+*.tmp
+*.jnl
+*.snap
+*.state
+crash-*.dmp
